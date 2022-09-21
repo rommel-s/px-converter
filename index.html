@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="input-container" class="input-container">
+      <div class="input-field col s6">
+        <input id="input-unit" type="number" class="validate" />
+        <label for="input-unit">Insira o valor para converter</label>
+      </div>
+      <button id="convert-btn" class="main-btn waves-effect waves-light btn">
+        Converter
+      </button>
+    </div>
+
+    <div id="results" class="results-area flow-text">
+      <ul id="cm-px" class="result-container">
+        <li class="teal lighten-5">
+          <span id="unit-cm-px"> - </span> cm →
+          <span id="result-cm-px"> - </span> px
+        </li>
+        <li class="teal lighten-4">
+          <span id="unit-px-cm"> - </span> px →
+          <span id="result-px-cm"> - </span> cm
+        </li>
+      </ul>
+
+      <ul id="em-px" class="result-container">
+        <li class="teal lighten-5">
+          <span id="unit-em-px"> - </span> em →
+          <span id="result-em-px"> - </span> px
+        </li>
+        <li class="teal lighten-4">
+          <span id="unit-px-em"> - </span> px →
+          <span id="result-px-em"> - </span> em
+        </li>
+      </ul>
+
+      <ul id="pt-px" class="result-container">
+        <li class="teal lighten-5">
+          <span id="unit-pt-px"> - </span> pt →
+          <span id="result-pt-px"> - </span> px
+        </li>
+        <li class="teal lighten-4">
+          <span id="unit-px-pt"> - </span> pt →
+          <span id="result-px-pt"> - </span> pt
+        </li>
+      </ul>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="index.js"></script>
+  </body>
+</html>
